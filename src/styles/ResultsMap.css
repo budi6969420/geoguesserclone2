@@ -1,4 +1,4 @@
-/* Keyframes for fade-in animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -10,7 +10,7 @@
   }
 }
 
-/* Keyframes for bounce effect on button hover */
+
 @keyframes bounce {
   0%,
   20%,
@@ -33,42 +33,40 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 20px auto;
+  width: 300px;
   text-align: center;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  top: 7.5%;
+  left: calc(50% - 150px);
   z-index: 1000;
-  animation: fadeIn 0.8s ease-in-out; /* Apply fade-in animation */
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .results-content h1 {
   font-size: 24px;
   margin: 10px 0;
   color: #333;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease; 
 }
 
 .results-content .distance {
   font-size: 18px;
   color: #555;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease; 
 }
 
 .results-content .score {
   font-size: 22px;
   font-weight: bold;
   color: #4caf50;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease; 
 }
 
 .map-container {
   height: 100%;
   width: 100%;
   border: 0.05em solid black;
-  animation: fadeIn 0.8s ease-in-out; /* Apply fade-in animation */
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .leaflet-map {

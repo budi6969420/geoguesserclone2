@@ -16,7 +16,7 @@ export default function Game({
 
   async function restartGame() {
     let gameIds = [...playedLevelIds, gameData.PanoramaId];
-    if (gameIds.length = dataService.getData().length) {
+    if (gameIds.length === dataService.getData().length) {
       gameIds = [];
     }
     setPlayedLevelIds(gameIds);
