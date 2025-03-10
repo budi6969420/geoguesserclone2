@@ -46,9 +46,17 @@ const MapSelectionForm = ({ setGuess, currentGuess, gameData }) => {
           )}
         </MapContainer>
       </div>
-      <button type="submit" style={{ visibility: selectedLocation && !currentGuess ? "visible" : "hidden" }}>
+      <button
+        type="submit"
+        disabled={!(selectedLocation && !currentGuess)}
+        style={{
+          backgroundColor: !(selectedLocation && !currentGuess) ? "#ccc" : "",
+          cursor: !(selectedLocation && !currentGuess) ? "not-allowed" : "pointer"
+        }}
+      >
         Submit
       </button>
+
     </form>
   );
 };
