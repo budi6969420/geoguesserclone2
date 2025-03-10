@@ -10,12 +10,12 @@ const MainMap = ({ gameData, totalScore, currentGuess, totalPlayedGames }) => {
     <>
       <div
         style={{
-          background: "black",
+          background: "white",
           position: "absolute",
           width: "300px",
           height: "150px",
-          top: "1.3%",
-          left: "0.5%",
+          top: "1.1%",
+          left: "0.2%",
           overflow: "hidden",
           border: "white solid 0.5px",
           borderRadius: "10px",
@@ -71,7 +71,7 @@ const MainMap = ({ gameData, totalScore, currentGuess, totalPlayedGames }) => {
           />
         </div>
         <div style={{ position: "absolute", top: "40%" }}>
-          <p style={{ color: "white", padding: "8%", width: "100%" }}>
+          <p style={{ color: "black", padding: "8%", width: "100%" }}>
             <span>Total Score: </span> <span>{totalScore}</span>
             <br />
             <span># Played Rounds: </span> <span>{totalPlayedGames}</span>
